@@ -1,0 +1,46 @@
+body {
+    background-color: #f5f5dc;
+    font-family: 'Kanit', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+header {
+    background-color: #916e3bd3;
+    border: 8px solid #6d6150d3;
+    text-align: center;
+    font-size: 40px;
+    color: #f0ffff;
+}
+#name {
+    font-size: 25px;
+}
+.textBox{
+    font-size: 20px;
+}
+#b1{
+    background-color: #6d6150d3;
+    color: #f0ffff;
+    font-size: 18px;
+    margin: 5px;
+    display: inline-block;
+}
+#center{
+    text-align: center;    
+}
+#receipt{
+    text-align: center;
+    background-color: #78a099;
+    color: #f0ffff;
+    background-image: url(https://img.freepik.com/free-photo/green-old-wood-background_64049-276.jpg?w=1060&t=st=1675065393~exp=1675065993~hmac=b3d8ef7e1cafeb8763b70a9d6f22856840f82d61669a471add01b5f58e14892a)
+}
+#image{
+    width: 300px;
+    height: 200px;
+    margin-top: 30px;
+}
+.bg_img{
+    background-image: url(https://img.freepik.com/free-photo/oak-wooden-textured-design-background_53876-143033.jpg?w=1380&t=st=1675065023~exp=1675065623~hmac=c828899d88e1d02e9c758cb58de9db2fa963a5c7d45df5861c0ea6838e97fb9b)
+}
+.grayscale{
+    filter: grayscale(70%);
+}

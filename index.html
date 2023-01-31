@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>สั่งอาหารกัน</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kanit:wght@200&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg_img">
+    <header>คำนวณอาหารตามสั่ง</header>
+
+    <div>
+    <h2>ชื่อลูกค้า</h2>
+    <input id="name" type="text">
+    <button id="b1" onclick='showname(document.getElementById("name").value)'>ยืนยัน</button>
+    <h2 id="nameC"></h2>
+    </div>
+
+    <div id="center">
+    <h1>รายการอาหาร</h1>
+    <img id="image" src="KP.jpg">
+    <h3>ข้าวผัดกะเพรา 45 บาท</h3>
+    <input class="textBox" id="orderKP" type="text"><br>
+    <img id="image" src="GL.jpg">
+    <h3>ข้าวหมูทอดกระเทียม 45 บาท</h3>
+    <input class="textBox" id="orderGL" type="text"><br>
+    <img id="image" src="KHP.jpg">
+    <h3>ข้าวผัดกุ้ง 50 บาท</h3>
+    <input class="textBox" id="orderKHP" type="text"><br>
+    <img id="image" src="PT.jpg">
+    <h3>ผัดไทยกุ้ง 55 บาท</h3>
+    <input class="textBox" id="orderPT" type="text"><br>
+    <button id="b1" onclick='order(document.getElementById("orderKP").value , document.getElementById("orderGL").value , document.getElementById("orderKHP").value , document.getElementById("orderPT").value)'>คิดเงิน</button>
+    </div>
+
+    <div class="grayscale" id="receipt">
+        <h1>รายการที่สั่ง</h1>
+        <h3 id="finalKP"></h3>
+        <h3 id="finalGL"></h3>
+        <h3 id="finalKHP"></h3>
+        <h3 id="finalPT"></h3>
+        <h3 id="sumOrder"></h3>
+        <h2>เงินที่ลูกค้าจ่าย</h2>
+        <input class="textBox" id="money" type="text"><br>
+        <button id="b1" onclick='order(document.getElementById("orderKP").value , document.getElementById("orderGL").value , document.getElementById("orderKHP").value , document.getElementById("orderPT").value , document.getElementById("money").value)'>คิดเงิน</button>
+        <h3 id="change"></h3>
+    </div>
+    
+    <script src="app.js"></script>
+</body>
+</html>
